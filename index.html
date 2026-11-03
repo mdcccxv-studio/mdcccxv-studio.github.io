@@ -35,6 +35,16 @@ section.s{padding-block:clamp(64px,9vw,128px)}
 .pname img{width:72px;height:72px} .pname span span{color:#7764D8}
 .pshot{background:#172033;height:520px;overflow:hidden;padding:48px 32px 0;display:flex;justify-content:center}
 .pshot img{width:100%;max-width:340px;height:auto;align-self:flex-start;border-radius:36px}
+.testers{margin-top:16px;background:#3563F6;color:#FFFFFF;border-radius:24px;padding:clamp(28px,4vw,56px);display:flex;flex-wrap:wrap;gap:32px 56px;justify-content:space-between;scroll-margin-top:16px}
+.testers>div{flex:1 1 380px;min-width:0}
+.testers .eyebrow{color:#DCE4FF}
+.testers h3{font-size:clamp(34px,4.4vw,60px);font-weight:600;letter-spacing:-.04em;line-height:1;margin:12px 0 20px;text-wrap:balance}
+.testers p.t{font-size:18px;line-height:1.5;max-width:520px}
+.tstep{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 20px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.3)}
+.tstep:first-child{padding-top:0} .tstep span{font-weight:500;font-size:18px;min-width:0;flex:1 1 200px}
+.tstep a{display:inline-flex;align-items:center;min-height:44px;padding:0 20px;border-radius:999px;background:#FFFFFF;color:#0B0B0D;font-weight:500;font-size:15px;text-decoration:none;white-space:nowrap}
+.testers a:focus-visible{outline:2px solid #FFFFFF;outline-offset:3px}
+.tnote{margin-top:16px;font-size:15px} .tnote a{color:#FFFFFF}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
 .card{background:#F2F3F5;border-radius:20px;padding:32px;min-height:210px;display:flex;flex-direction:column;justify-content:flex-end;gap:8px}
 .card h3{font-size:24px;font-weight:600;letter-spacing:-.02em;line-height:1.2} .card p{color:#5F6368}
@@ -62,6 +72,15 @@ footer img{height:34px;width:auto;display:block}
 <p style="font-size:19px;line-height:1.45">A research app for students and researchers. Ask your PDFs anything and get answers written from your own papers, with the passages behind them. The AI runs on your phone, so your papers and questions never leave it.</p>
 <p class="eyebrow">by MDCCCXV Studio</p></div>
 <div class="pshot"><img src="assets/papertrail-screen.png" alt="PaperTrail's Research screen, showing an answer written from two papers with its sources listed below it"></div></article>
+<aside class="testers" id="testers" aria-labelledby="testers-title">
+<div><p class="eyebrow">Now testing</p><h3 id="testers-title">Help us test PaperTrail.</h3>
+<p class="t">PaperTrail is almost ready for Google Play. We're looking for Android testers to try it with their own papers for 14 days and tell us what they think. It's free and takes about 5 minutes to join.</p></div>
+<div>
+<div class="tstep"><span>1. Join the testers group</span><a href="https://groups.google.com/g/papertrail-testers" target="_blank" rel="noopener">Join the group</a></div>
+<div class="tstep"><span>2. Become a tester</span><a href="https://play.google.com/apps/testing/com.mdcccxv.papertrail" target="_blank" rel="noopener">Become a tester</a></div>
+<div class="tstep"><span>3. Install it and keep it for 14 days</span><a href="https://play.google.com/store/apps/details?id=com.mdcccxv.papertrail" target="_blank" rel="noopener">Install from Google Play</a></div>
+<p class="tnote">Use the same Google account as your Play Store. Already testing? <a href="https://forms.gle/AUtAzyir3wLNxvb19" target="_blank" rel="noopener">Send us feedback</a>.</p>
+</div></aside>
 </div></section>
 <section class="s" id="services" style="padding-top:0"><div class="wrap">
 <div class="head"><div><p class="eyebrow">Client services</p><h2>What we build for clients.</h2></div></div>
