@@ -18,9 +18,10 @@ h1{font-size:clamp(52px,9vw,136px)} h2{font-size:clamp(38px,5.4vw,76px)}
 .eyebrow{font:400 13px/1.4 'Geist Mono',monospace;color:#5F6368}
 .btn{display:inline-flex;align-items:center;min-height:50px;padding:0 24px;border-radius:999px;font-weight:500;text-decoration:none}
 header .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;justify-content:space-between;padding-block:20px}
-header img{height:40px;width:auto;display:block}
+header img{height:36px;width:36px;display:block}
 nav{display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px;font-weight:500;font-size:15px} nav a{text-decoration:none}
 .hero{padding-block:clamp(48px,8vw,104px) clamp(40px,5vw,64px)}
+.hero-logo{display:block;width:min(480px,82vw);height:auto;margin:0 0 30px}
 .lede{max-width:600px;margin-top:32px;font-size:clamp(18px,1.7vw,22px);line-height:1.45;color:#5F6368}
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
 .band{background:#3563F6;overflow:hidden;height:clamp(180px,30vw,430px)}
@@ -56,16 +57,17 @@ section.s{padding-block:clamp(64px,9vw,128px)}
 footer{background:#0B0B0D;color:#A6A9B0;font-size:14px}
 footer .wrap{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center;padding-block:32px;border-top:1px solid #2A2B30}
 footer img{height:34px;width:auto;display:block}
-.social-links{display:flex;flex-wrap:wrap;gap:10px 18px;margin:16px 0 0;padding:0;list-style:none}
-.social-links a{color:#FFFFFF;text-decoration:none;font-size:14px}
-.social-links a:hover,.social-links a:focus{color:#A6B7FF;text-decoration:underline}
+.social-links{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 0;padding:0;list-style:none}
+.social-links a.social-icon{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid #5F6368;border-radius:50%;color:#FFFFFF;text-decoration:none;transition:background-color .16s ease,border-color .16s ease,color .16s ease}
+.social-links a.social-icon svg{width:20px;height:20px;display:block;fill:currentColor}
+.social-links a.social-icon:hover,.social-links a.social-icon:focus-visible{background:#3563F6;border-color:#3563F6;color:#FFFFFF;text-decoration:none}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style></head><body>
-<header><div class="wrap"><a href="#top" aria-label="MDCCCXV Studio home"><img src="assets/lockup-dark.svg" alt="MDCCCXV Studio"></a>
+<header><div class="wrap"><a href="#top" aria-label="MDCCCXV Studio home"><img src="assets/icon-blue.svg" alt=""></a>
 <nav aria-label="Main"><a href="#products">Products</a><a href="#services">Services</a><a href="#approach">Approach</a>
 <a class="btn" href="#contact" style="min-height:44px;padding:0 20px;background:#0B0B0D;color:#FFFFFF">Start a project</a></nav></div></header>
 <main id="top">
-<section class="hero"><div class="wrap"><h1>Software products. Built with purpose.</h1>
+<section class="hero"><div class="wrap"><img class="hero-logo" src="assets/lockup-dark.svg" alt="MDCCCXV Studio"><h1>Software products. Built with purpose.</h1>
 <p class="lede">MDCCCXV Studio designs and builds software products for people and businesses. We develop our own products and partner with clients to turn ideas and operational needs into useful software.</p>
 <div class="cta"><a class="btn" href="#contact" style="background:#3563F6;color:#FFFFFF">Work with us</a><a class="btn" href="#products" style="box-shadow:inset 0 0 0 1.5px #0B0B0D">See PaperTrail</a></div></div></section>
 <div class="band"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 100" aria-hidden="true" style="display:block;"><path transform="translate(0 0)" fill="none" stroke="#FFFFFF" stroke-width="20" d="M81.20 24.96 A40 40 0 1 0 81.20 75.04"/><path transform="translate(94 0)" fill="none" stroke="#FFFFFF" stroke-width="20" d="M81.20 24.96 A40 40 0 1 0 81.20 75.04"/><path transform="translate(188 0)" fill="none" stroke="#FFFFFF" stroke-width="20" d="M81.20 24.96 A40 40 0 1 0 81.20 75.04"/></svg></div>
@@ -105,8 +107,18 @@ footer img{height:34px;width:auto;display:block}
 <p class="t">We take on product builds for founders, apps for businesses and their customers, and internal tools that replace repetitive work. Tell us what you need and we'll reply with how we'd approach it.</p></div>
 <div style="flex:1 1 260px;min-width:0"><a class="btn" href="mailto:mdcccxv@gmail.com" style="background:#3563F6;color:#FFFFFF;width:100%;justify-content:center;min-height:56px">Start a project</a>
 <p class="eyebrow" style="text-align:center;margin-top:12px"><a href="mailto:mdcccxv@gmail.com" style="color:inherit;text-decoration:none">mdcccxv@gmail.com</a></p>
-<nav aria-label="Social media"><ul class="social-links" style="justify-content:center"><li><a href="https://www.youtube.com/@mdcccxvstudio" target="_blank" rel="noopener noreferrer">YouTube</a></li><li><a href="https://x.com/mdcccxv" target="_blank" rel="noopener noreferrer">X</a></li><li><a href="https://www.instagram.com/mdcccxv" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="https://www.tiktok.com/@mdcccxvstudio" target="_blank" rel="noopener noreferrer">TikTok</a></li></ul></nav></div>
+<nav aria-label="Social media"><ul class="social-links" style="justify-content:center">
+<li><a class="social-icon" href="https://www.youtube.com/@mdcccxvstudio" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z"/></svg></a></li>
+<li><a class="social-icon" href="https://x.com/mdcccxv" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.6 22H2.4l7.3-8.4L1.8 2h6.5l4.5 6.8L18.9 2Zm-1.1 18h1.7L7.3 3.9H5.5L17.8 20Z"/></svg></a></li>
+<li><a class="social-icon" href="https://www.instagram.com/mdcccxv" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7ZM12 6.7a5.3 5.3 0 1 1 0 10.6 5.3 5.3 0 0 1 0-10.6Zm0 2.2a3.1 3.1 0 1 0 0 6.2 3.1 3.1 0 0 0 0-6.2Zm5.5-3.3a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6Z"/></svg></a></li>
+<li><a class="social-icon" href="https://www.tiktok.com/@mdcccxvstudio" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 6.2a5.9 5.9 0 0 1-3.7-4.8V1h-4.1v15.1a3.4 3.4 0 1 1-3.4-3.4c.5 0 1 .1 1.4.3V8.8a7.6 7.6 0 1 0 6.1 7.4V9a9.9 9.9 0 0 0 5.8 1.9V6.8c-.8 0-1.5-.2-2.1-.6Z"/></svg></a></li>
+</ul></nav></div>
 </div></section>
 </main>
-<footer><div class="wrap"><img src="assets/lockup-white.svg" alt="MDCCCXV Studio"><p>Software Product Studio. We build software products and digital experiences.</p><nav aria-label="Social media"><ul class="social-links"><li><a href="https://www.youtube.com/@mdcccxvstudio" target="_blank" rel="noopener noreferrer">YouTube</a></li><li><a href="https://x.com/mdcccxv" target="_blank" rel="noopener noreferrer">X</a></li><li><a href="https://www.instagram.com/mdcccxv" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="https://www.tiktok.com/@mdcccxvstudio" target="_blank" rel="noopener noreferrer">TikTok</a></li></ul></nav><span>© 2026 MDCCCXV Studio</span></div></footer>
+<footer><div class="wrap"><img src="assets/lockup-white.svg" alt="MDCCCXV Studio"><p>Software Product Studio. We build software products and digital experiences.</p><nav aria-label="Social media"><ul class="social-links">
+<li><a class="social-icon" href="https://www.youtube.com/@mdcccxvstudio" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z"/></svg></a></li>
+<li><a class="social-icon" href="https://x.com/mdcccxv" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.6 22H2.4l7.3-8.4L1.8 2h6.5l4.5 6.8L18.9 2Zm-1.1 18h1.7L7.3 3.9H5.5L17.8 20Z"/></svg></a></li>
+<li><a class="social-icon" href="https://www.instagram.com/mdcccxv" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7ZM12 6.7a5.3 5.3 0 1 1 0 10.6 5.3 5.3 0 0 1 0-10.6Zm0 2.2a3.1 3.1 0 1 0 0 6.2 3.1 3.1 0 0 0 0-6.2Zm5.5-3.3a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6Z"/></svg></a></li>
+<li><a class="social-icon" href="https://www.tiktok.com/@mdcccxvstudio" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 6.2a5.9 5.9 0 0 1-3.7-4.8V1h-4.1v15.1a3.4 3.4 0 1 1-3.4-3.4c.5 0 1 .1 1.4.3V8.8a7.6 7.6 0 1 0 6.1 7.4V9a9.9 9.9 0 0 0 5.8 1.9V6.8c-.8 0-1.5-.2-2.1-.6Z"/></svg></a></li>
+</ul></nav><span>© 2026 MDCCCXV Studio</span></div></footer>
 </body></html>
